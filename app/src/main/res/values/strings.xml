@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">PetIt</string>
+
+    <!-- strings per il tutorial-->
+    <string name="activity_tutorial">Tutorial</string>
+    <string name="next">AVANTI</string>
+    <string name="skip">SALTA</string>
+    <string name="start">REGISTRATI</string>
+
+    <string name="tutorial_1_title">Un cucciolo è in cerca di aiuto?</string>
+    <string name="tutorial_1_desc">Vuoi aiutarlo ma non sai come fare?</string>
+
+    <string name="tutorial_2_title">Hai smarrito il tuo cucciolo?</string>
+    <string name="tutorial_2_desc">Compila il form e segnala lo smarrimento o la posizione di un animale</string>
+
+    <string name="tutorial_3_title">Ora è sulla mappa!</string>
+    <string name="tutorial_3_desc">Controlla in tempo reale sulla mappa tutti gli avvistamenti della zona</string>
+
+    <string name="tutorial_4_title">Aiuta a far ritornare a casa i cuccioli smarriti \u2764</string>
+    <string name="tutorial_4_desc"></string>
 </resources>
