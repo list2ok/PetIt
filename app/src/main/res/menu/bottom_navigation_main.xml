@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add"
+        android:enabled="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:icon="@drawable/ic_add"
+        android:title="@string/aggiungi"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/action_menu"
+        android:enabled="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:icon="@drawable/ic_hamburger"
+        android:title="Menu"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/action_mappa"
+        android:enabled="true"
+        android:fontFamily="sans-serif-smallcaps"
+        android:icon="@drawable/ic_mappa"
+        android:title="Mappa"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

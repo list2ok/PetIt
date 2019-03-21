@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sfondo_app"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".segnalazioni.AggiungiSegnalazione">
+
+    <LinearLayout
+        android:id="@+id/intestazione"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/selezione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif"
+            android:text="Scegli la razza "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/sottoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selezione"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif"
+            android:text="del cane da segnalare"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="7.5"
+        app:cardCornerRadius="5dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2">
+
+                <!-- Row 1 -->
+
+                <!-- Column 1 -->
+
+                <android.support.v7.widget.CardView
+                    style="@style/CardViewStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="#F0F0F0">
+
+                    <Button
+                        android:id="@+id/razza1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@drawable/husky"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Husky"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <!-- Column 2 -->
+
+                <android.support.v7.widget.CardView
+                    style="@style/CardViewStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="#F0F0F0">
+
+                    <Button
+                        android:id="@+id/razza2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@drawable/cane_topo"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Chiuaua"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <!-- Row 1 -->
+
+                <!-- Column 1 -->
+
+                <android.support.v7.widget.CardView
+                    style="@style/CardViewStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="#F0F0F0">
+
+                    <Button
+                        android:id="@+id/razza3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@drawable/jack_russel"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Jack"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <!-- Column 2 -->
+
+                <android.support.v7.widget.CardView
+                    style="@style/CardViewStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="#F0F0F0">
+
+                    <Button
+                        android:id="@+id/razza4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@drawable/labrador"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Labrador"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <!-- Row 1 -->
+
+                <!-- Column 1 -->
+
+                <android.support.v7.widget.CardView
+                    style="@style/CardViewStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="#F0F0F0">
+
+                    <Button
+                        android:id="@+id/razza5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@drawable/bulldog_francese"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="French"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <!-- Column 2 -->
+
+                <android.support.v7.widget.CardView
+                    style="@style/CardViewStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="#F0F0F0">
+
+                    <Button
+                        android:id="@+id/razza6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@drawable/carlino"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Carlino"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <!-- Row 1 -->
+
+                <!-- Column 1 -->
+
+                <android.support.v7.widget.CardView
+                    style="@style/CardViewStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="#F0F0F0">
+
+                    <Button
+                        android:id="@+id/razza7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@drawable/samoiedo"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Samoiedo"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+                <!-- Column 2 -->
+
+                <android.support.v7.widget.CardView
+                    style="@style/CardViewStyle"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="16dp"
+                    app:cardBackgroundColor="#F0F0F0">
+
+                    <Button
+                        android:id="@+id/razza8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:drawableTop="@drawable/bull_terrier"
+                        android:drawablePadding="10dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Terrier"
+                        android:textStyle="bold" />
+
+                </android.support.v7.widget.CardView>
+
+            </GridLayout>
+
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

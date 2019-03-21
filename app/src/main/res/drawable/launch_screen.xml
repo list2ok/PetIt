@@ -4,7 +4,7 @@
 
     <item>
         <bitmap
-            android:src="@drawable/launch_background"
+            android:src="@drawable/sfondo_splash"
             android:gravity="center"
             />
     </item>

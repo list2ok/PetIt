@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="taglie">
+        <item>Piccola</item>
+        <item>Media</item>
+        <item>Grande</item>
+        <item>Gigante</item>
+    </string-array>
+
+</resources>

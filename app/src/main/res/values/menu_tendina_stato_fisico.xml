@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="statoFisico">
+        <item>Ferito</item>
+        <item>Deperito</item>
+        <item>In salute</item>
+    </string-array>
+
+</resources>

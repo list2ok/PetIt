@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sfondo_app"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:context=".segnalazioni.AggiungiSegnalazione">
+
+    <RelativeLayout
+        android:id="@+id/intestazione"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+
+        <TextView
+            android:id="@+id/selezione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif"
+            android:text="Un ultimo passo"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/sottoText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selezione"
+            android:layout_centerInParent="true"
+            android:fontFamily="sans-serif"
+            android:text="compila le caselle!"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@id/intestazione"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="8"
+        android:alignmentMode="alignMargins"
+        android:columnCount="1"
+        android:columnOrderPreserved="false"
+        android:padding="14dp">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardBackgroundColor="#F0F0F0"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/posizioneTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@id/posizione"
+                        android:layout_marginTop="10dp"
+                        android:padding="10dp"
+                        android:text="Posizione" />
+
+                    <EditText
+                        android:id="@+id/posizione"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/posizioneTV"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginHorizontal="20dp"
+                        android:ems="15"
+                        android:hint="es. via ledita dal naso 3"
+                        android:inputType="textPersonName"
+                        android:theme="@style/EditText" />
+
+                    <TextView
+                        android:id="@+id/colorePeloTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/posizione"
+                        android:layout_alignLeft="@id/colorePelo"
+                        android:padding="10dp"
+                        android:text="Colore del pelo" />
+
+                    <EditText
+                        android:id="@+id/colorePelo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/colorePeloTV"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginHorizontal="20dp"
+                        android:ems="15"
+                        android:hint="es. sesamo"
+                        android:inputType="textPersonName"
+                        android:theme="@style/EditText" />
+
+                    <TextView
+                        android:id="@+id/tipoPeloTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/colorePelo"
+                        android:layout_alignLeft="@id/tipoPelo"
+                        android:padding="10dp"
+                        android:text="Tipo del pelo" />
+
+                    <Spinner
+                        android:id="@+id/tipoPelo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tagliaTV"
+                        android:layout_marginHorizontal="20dp"
+                        android:dropDownSelector="@color/colorPrimary"
+                        android:entries="@array/tipoPelo" />
+
+                    <TextView
+                        android:id="@+id/tagliaTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tipoPelo"
+                        android:layout_alignLeft="@id/taglia"
+                        android:padding="10dp"
+                        android:text="Taglia" />
+
+                    <Spinner
+                        android:id="@+id/taglia"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tagliaTV"
+                        android:layout_marginHorizontal="20dp"
+                        android:dropDownSelector="@color/colorPrimary"
+                        android:entries="@array/taglie" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/statoFisicoTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/taglia"
+                        android:layout_alignLeft="@id/colorePelo"
+                        android:padding="10dp"
+                        android:text="Stato fisico"
+                        android:theme="@style/EditText" />
+
+                    <TextView
+                        android:id="@+id/optional1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/statoFisico"
+                        android:layout_alignRight="@id/statoFisico"
+                        android:padding="10dp"
+                        android:text="(Optional)" />
+
+
+                    <Spinner
+                        android:id="@+id/statoFisico"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tagliaTV"
+                        android:layout_marginHorizontal="20dp"
+                        android:dropDownSelector="@color/colorPrimary"
+                        android:entries="@array/statoFisico" />
+
+                    <TextView
+                        android:id="@+id/statoMentaleTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/statoFisico"
+                        android:layout_alignLeft="@id/statoMentale"
+                        android:padding="10dp"
+                        android:text="Stato mentale" />
+
+                    <TextView
+                        android:id="@+id/optional2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignRight="@id/statoMentale"
+                        android:padding="10dp"
+                        android:text="(Optional)" />
+
+                    <Spinner
+                        android:id="@+id/statoMentale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tagliaTV"
+                        android:layout_marginHorizontal="20dp"
+                        android:dropDownSelector="@color/colorPrimary"
+                        android:entries="@array/statoMentale" />
+
+                    <TextView
+                        android:id="@+id/infoExtraTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/statoMentale"
+                        android:layout_alignLeft="@id/infoExtra"
+                        android:padding="10dp"
+                        android:text="Ulteriori informazioni" />
+
+                    <TextView
+                        android:id="@+id/optional3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/infoExtra"
+                        android:layout_alignRight="@id/infoExtra"
+                        android:padding="10dp"
+                        android:text="(Optional)" />
+
+                    <EditText
+                        android:id="@+id/infoExtra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/infoExtraTV"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginHorizontal="20dp"
+                        android:ems="15"
+                        android:gravity="top|left"
+                        android:hint="Note"
+                        android:inputType="textMultiLine|textCapSentences"
+                        android:lines="1"
+                        android:theme="@style/EditText" />
+
+
+                    <Button
+                        android:id="@+id/immettiSegnalazione"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/infoExtra"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:ems="15"
+                        android:text="Immetti Segnalazione" />
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+</LinearLayout>

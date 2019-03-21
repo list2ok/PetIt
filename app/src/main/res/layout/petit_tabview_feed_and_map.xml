@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context=".FeedAndMap.FeedAndMapFragment">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/TabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="@color/colorPrimary">
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/Map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Map"
+            app:itemTextColor="@drawable/nav_item_color_state" />
+
+        <android.support.design.widget.TabItem
+            android:id="@+id/Feed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Feed"
+            app:itemTextColor="@drawable/nav_item_color_state" />
+
+    </android.support.design.widget.TabLayout>
+
+    <LinearLayout
+        android:id="@+id/containerFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="91"
+        android:orientation="vertical"></LinearLayout>
+
+</LinearLayout>

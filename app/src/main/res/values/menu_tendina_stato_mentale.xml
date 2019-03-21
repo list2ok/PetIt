@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="statoMentale">
+        <item>Impaurito</item>
+        <item>Agitato</item>
+        <item>Amichevole</item>
+        <item>Aggressivo</item>
+    </string-array>
+
+</resources>

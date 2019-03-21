@@ -20,6 +20,8 @@ import android.widget.TextView;
 
 import com.petit.MainActivity;
 import com.petit.R;
+import com.petit.login.LoginActivity;
+import com.petit.login.RegistrazioneActivity;
 
 public class TutorialActivity extends AppCompatActivity {
     private ViewPager viewPager;
@@ -120,7 +122,7 @@ public class TutorialActivity extends AppCompatActivity {
 
     private void launchHomeScreen() {
         prefManager.setFirstTimeLaunch(false);
-        startActivity(new Intent(TutorialActivity.this, MainActivity.class));
+        startActivity(new Intent(TutorialActivity.this, RegistrazioneActivity.class));
         finish();
     }
 
